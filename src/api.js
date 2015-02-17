@@ -62,9 +62,19 @@ var swApi = function(){
         sendAjaxRequest(apiUrl + method +'/?page=' + page, callback);
     }
 
+
+
+
     /**
     API 
     **/
+
+
+
+    this.getRoot = function(callback){
+
+        sendAjaxRequest(apiUrl, callback);
+    }
 
     this.getPeople = function(page, callback){
 
